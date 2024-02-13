@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Inject
 
 struct ContentView: View {
+    @ObserveInjection var inject
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +19,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .enableInjection()
     }
 }
 
