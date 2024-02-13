@@ -11,6 +11,7 @@
 		C847286A2B7B6847004D3EC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84728692B7B6847004D3EC4 /* ContentView.swift */; };
 		C847286C2B7B6848004D3EC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C847286B2B7B6848004D3EC4 /* Assets.xcassets */; };
 		C847286F2B7B6848004D3EC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C847286E2B7B6848004D3EC4 /* Preview Assets.xcassets */; };
+		C84728782B7B699C004D3EC4 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C84728772B7B699C004D3EC4 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84728782B7B699C004D3EC4 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = MacOSWithInjectionIII;
+			packageProductDependencies = (
+				C84728772B7B699C004D3EC4 /* Inject */,
+			);
 			productName = MacOSWithInjectionIII;
 			productReference = C84728642B7B6847004D3EC4 /* MacOSWithInjectionIII.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C847285B2B7B6847004D3EC4;
+			packageReferences = (
+				C84728762B7B699C004D3EC4 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = C84728652B7B6847004D3EC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C84728762B7B699C004D3EC4 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C84728772B7B699C004D3EC4 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C84728762B7B699C004D3EC4 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C847285C2B7B6847004D3EC4 /* Project object */;
 }
